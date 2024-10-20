@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image: url("./png/xuebao.jpg");
+        background-size: 100%;
+        /* 这个很重要 */
+        display:-webkit-flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        /* 啊
+        啊
+        啊
+        啊 */
+    }
+    #a1{
+        width: 800px;
+        height: 600px;
+        position: relative;
+        top: 50px;
+        display:-webkit-flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items: center;
+        flex-wrap:wrap;
+        /* 有很多行 */
+    }
+    #a{
+        width: 100%;
+        height: 50px;
+        display:-webkit-flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: center;
+    }
+    #b{
+        width: 100%;
+        height: 400px;
+        background-color:aquamarine;
+        opacity:0.8;
+        border-radius: 10%;
+        box-shadow: 0 0 10px black;
+        display:-webkit-flex;
+        flex-direction:column;
+        justify-content:space-around;
+    }
+    #c{
+        width: 50%;
+        height: 50px;
+        background-color:blueviolet;
+        opacity:0.8;
+        border-radius: 50px;
+        box-shadow: 0 0 10px black;
+    }
+    #a>div{
+        height: 100%;
+        background-color: brown;
+        opacity:0.8;
+        border-radius: 35px;
+        box-shadow: 0 0 10px black;
+    }
+    #a_1{
+        width: 200px;
+        text-align: center;
+    }
+    #a_2{
+        width: 50px;
+        position: relative;
+        left: 200px;
+    }
+    #a_3{
+        width: 100px;
+    }
+    #b_1{
+        height: 30px;
+        position: relative;
+        left: 100px;
+    }
+    #b_2{
+        width: 300px;
+        height: 100px;
+        position: relative;
+        left: 130px;
+        display:-webkit-flex;
+        flex-direction:column;
+        justify-content:space-around;
+
+        /* display:inline-grid;
+        grid-template-columns: auto auto;
+        啊
+        啊
+        啊
+        不要加逗号啊！！！
+        grid-gap: 10px; */
+    }
+    #b_3{
+        height: 30px;
+        position: relative;
+        left: 100px;
+    }
+    #b_4{
+        height: 30px;
+        position: relative;
+        left: 130px;
+    }
+    #b_5{
+        height: 30px;
+        position: relative;
+        left: 150px;
+        display: flex;
+    }
+    #b_5_1{
+        width: 100px;
+    }
+    #b_2>div{
+        display:-webkit-flex;
+        flex-direction:row;
+    }
+    .a{
+        display:-webkit-flex;
+        justify-content:center;
+        align-items: center;
+    }
+</style>
+<body >
+    <div id="a1">
+        <div id="a">
+            <div id="a_1" class="a">
+                试用期作业2
+            </div>
+            <div id="a_2" class="a">
+                <img src="./png/dingzhen.jpg" alt="不对" width="30px" height="30px">
+            </div>
+            <div id="a_3" class="a">
+                啊啊啊
+            </div>
+        </div>
+        <div id="b">
+            <div id="b_1">
+                我要睡觉
+            </div>
+            <div id="b_2">
+                <div><input type="radio" name="geci"  value="烟鬼来喽"><span>烟鬼来喽</span>
+                    <input type="radio" name="geci"  value="王元来喽"><span class="a2">王元来喽睡觉！</span>
+                </div>
+                <div>
+                    <input type="radio" name="geci"  value="顶针来喽"><span>顶针来喽</span>
+                    <input type="radio" name="geci"  value="尼玛来喽"><span class="a2">顶针来喽</span>
+                </div>
+            </div>
+            <div id="b_3">
+                你想睡觉吗
+            </div>
+            <div id="b_4">
+                <input type="text" placeholder="请填入歌词">
+            </div>
+            <div id="b_5">
+                <input type="button" value="睡觉">
+                <div id="b_5_1"></div>
+                <input type="button" value="还是睡觉">
+            </div>
+        </div>
+        <div id="c" class="a">
+            啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+        </div>
+    </div>
+</body>
+</html>
